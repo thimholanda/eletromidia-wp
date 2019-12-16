@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap')
+$font-family-base: 'Lato', sans-serif
+$breadcrumb-active-color: black
+$spacer: 1rem
+$spacers: ()
+$spacers: map-merge((0: 0, 1: ($spacer * .25), 2: ($spacer * .5), 3: $spacer, 4: ($spacer * 1.5), 5: ($spacer * 3), 6: ($spacer * 4.5), 7: ($spacer * 6), 8: ($spacer * 7.5), 9: ($spacer * 9), 10: ($spacer * 10.5)),$spacers)
+@import "~bootstrap/scss/bootstrap"
+@import "my-vars"
+@import "custom"
+
+$slick-font-path: "~slick-carousel/slick/fonts/" !default
+$slick-font-family: "slick" !default
+$slick-loader-path: "~slick-carousel/slick/" !default
+$slick-arrow-color: black !default
+
+@import "~slick-carousel/slick/slick.scss"
+@import "~slick-carousel/slick/slick-theme.scss"
